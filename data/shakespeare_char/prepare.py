@@ -31,6 +31,7 @@ print(f"vocab size: {vocab_size:,}")
 stoi = { ch:i for i,ch in enumerate(chars) }# str to int
 print("stoi : ",stoi)
 itos = { i:ch for i,ch in enumerate(chars) }
+print("itos : ",itos)
 def encode(s):
     return [stoi[c] for c in s] # encoder: take a string, output a list of integers
 def decode(l):
